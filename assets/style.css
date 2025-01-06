@@ -1,0 +1,539 @@
+
+:root {
+    --theme-color: #001845;
+    --theme-secondary-color: #e44d26;
+    --theme-secondary-color-hover: #001830;
+}
+::-moz-selection {
+  color: white;
+  background: var(--theme-color);
+}
+
+::selection {
+  color: white;
+  background: var(--theme-color);
+}
+body, html {
+    font-family: 'Nunito', sans-serif, arial;
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+}
+
+.h3 {
+    font-weight: 900;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: 900;
+}
+
+a, p, span, div, small {
+    font-family: 'Nunito', sans-serif, arial;
+    font-weight: 700;
+}
+
+.navbar {
+    padding: 2rem;
+}
+a {
+    color: var(--theme-color);
+}
+.navbar-brand {
+
+    font-family: 'Nunito', sans-serif, arial;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.mn-underline {
+    position: relative;
+}
+
+.mn-underline:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--theme-color);
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.mn-underline-default {
+    visibility: visible;
+}
+
+.mn-nav-link:hover {
+    color: var(--theme-color);
+}
+
+.mn-underline-default:before {
+    left:  .5rem;
+}
+
+.mn-underline-default:before {
+    visibility: visible;
+    width: 40%;
+}
+
+.mn-nav-link.mn-underline:before {
+    left:  .5rem;
+}
+
+.mn-underline:hover:before {
+    visibility: visible;
+    width: 40%;
+}
+
+.mn-nav-link-icon {
+    font-size: 1.8rem;
+}
+
+.mn-info {
+    margin: 20px 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mn-info-relative {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mn-portfolio-banner {
+    /*z-index: 999;*/
+    margin: 0 auto;
+    height: calc(100% - 150px);
+}
+
+.mn-banner-text {
+    font-family: 'Nunito', sans-serif, arial;
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 4rem;
+}
+
+.mn-text {
+    font-family: 'Nunito', sans-serif, arial;
+    font-family: 'Nunito', sans-serif, arial;
+    font-size: 0.8rem;
+    color: #7d7d7d;
+}
+.banner {
+    height: 100vh;
+    width: 100%;
+}
+
+.mn-experience, .mn-skills, .mn-volunteer, .mn-publications, .mn-contact {
+    padding: 5rem;
+    background-color: #f9f9f9;
+}
+
+.mn-education, .mn-hackathons, .mn-profiles {
+    padding: 5rem;
+    background-color: #fff;
+}
+
+.mn-section .h1 {
+    text-align: center;
+}
+
+.education ul {
+  margin-top: 10px;
+  list-style: none;
+}
+.education ul li {
+  font-size: 13pt;
+  padding-bottom:  10px;
+}
+.education ul li small {
+  font-size: 10pt;
+}
+.education ul li::before {
+  content: "\f19d";
+  font-size: 15pt;
+  font-family: FontAwesome;
+  margin-left: -1.5em;
+}
+
+.interests li {
+  line-height: 1.7;
+  margin-left: -5px;
+  color: rgba(0, 0, 0, 0.65);
+}
+.skills-container {
+  height: 25px;
+  background: #000;
+}
+.skills-progress {
+  position: relative;
+  width: 100%;
+  vertical-align: middle;
+  height: 25px;
+  background: #3CA55C;
+}
+
+#skills .container .col-md-4 {
+  overflow: hidden;
+}
+.skill {
+  position: relative;
+  padding: 5px 5px;
+  text-align: center;
+}
+
+.skill i {
+  font-size: 50pt;
+}
+.skill p.skill-desc {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: .85rem;
+}
+.skill .h3 {
+  color: var(--theme-color);
+  font-size: 1.35rem;
+}
+.skill-js {
+  color: #F0DB4F;
+}
+.skill-php {
+  color: #4F5B93;
+}
+.skill-vc {
+  color: #fd836e;
+}
+.skill-sql {
+  color: #4479a1;
+}
+.skill-unity {
+  color: #212a35;
+}
+.skill-python {
+  color: #3776ab;
+}
+.skill-java {
+  color: red;
+}
+.skill-drupal {
+  color: #0678be;
+}
+.skill-html {
+  color: #e44d26;
+}
+.skill-css {
+  color: #1b73ba;
+}
+.skill-docker {
+  color: #099cec;
+}
+.skill-laravel {
+  color: #ff2d20;
+}
+.skill-wordpress {
+  color: #32373c;
+}
+
+.mn-dev-profile {
+    padding: 1rem 1.5rem;
+    background-color: #f9f9f9;
+    /*background-color: #fff;*/
+    margin: 1rem;
+    font-size: 4rem;
+    border-radius: 8px;
+}
+
+.mn-dev-profile-link:hover {
+    text-decoration: none;
+    color: var(--theme-secondary-color-hover);
+}
+
+.mn-btn {
+  padding: 12px 18px;
+  margin-right: 5px;
+  border: none;
+  font-size: .9rem;
+  font-weight: 600;
+  font-family: 'Nunito', sans-serif, arial;
+  background-color: var(--theme-color);
+  color: #fff;
+}
+
+.mn-btn:hover, .mn-btn:focus, .mn-btn:active {
+    background-color: var(--theme-secondary-color-hover) !important;
+    color: #fff !important;
+}
+
+/*        .mn-btn {
+    background-color: var(--theme-secondary-color);
+    color: white;
+}*/
+
+
+.experience-card {
+    background-color: #fff;
+    padding: 2rem;
+}
+
+.experience-card span {
+    font-size: .95rem;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.project, .part-of {
+  margin-top: 50px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+  text-align: left;
+}
+.part-of ul li {
+  line-height: 1.8;
+  font-size: .85rem;
+  color: rgba(0, 0, 0, 0.65);
+  font-family: 'Ubuntu', sans-serif, arial;
+}
+.project .col-md-8, .part-of .col-md-8 {
+  padding: 30px;
+}
+.project small, .part-of small {
+  color: #888;
+}
+.project a i, .part-of a i {
+  margin-left: 3px;
+  font-size: 10pt;
+}
+.project p, .part-of p {
+  margin-top: 12px;
+  line-height: 1.7;
+  font-size: .85rem;
+  color: rgba(0, 0, 0, 0.65);
+}
+.project .h3, .part-of .h3 {
+  margin-bottom: 0px;
+}
+.project .mn-img, .part-of .mn-img {
+  padding: 5px;
+  margin: 0 auto;
+}
+.mn-col {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+.part-of .mn-col img {
+  margin: 0 auto;
+}
+.project .col-md-8 .h3, .part-of .col-md-8 .h3 {
+  font-size: 18pt;
+}
+
+
+.mn-wot {
+  background: rgb(69, 161, 255);
+}
+.mn-circle {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+}
+.circle-php {
+  background-color: #4F5D95;
+}
+.circle-csharp {
+  background-color: #178600;
+}
+.circle-go {
+  background-color: #00ADD8;
+}
+.circle-python {
+  background-color: #3572A5;
+}
+.circle-javascript {
+  background-color: #f1e05a;
+}
+
+.stars {
+  display: inline-block;
+}
+.star-icon {
+  margin-left: 8px;
+}
+
+
+.img-resp {
+  margin: 25% 0% 25% 25%;
+}
+
+#name, #email, #message {
+  font-size: 15pt;
+  font-family: inherit;
+  padding: 15px;
+  color: #212a35;
+}
+.contact-form label {
+  float: left;
+}
+
+.footer ul li {
+    padding: .5rem;
+}
+.footer ul li a i {
+    font-size: 2rem;
+    margin-right: 5px;
+}
+
+.footer ul li a {
+    color: white;
+}
+
+.mn-profiles span {
+    font-size: 1.5rem !important;
+    vertical-align: middle;
+}
+
+.footer-top {
+    background-color: #222;
+    padding: 20px;
+}
+.footer-bottom {
+    padding: 20px;
+    background-color: #000;
+    color: white;
+}
+
+.footer-bottom a {
+    color: white;
+}
+
+.mn-linkedin {
+    color: #0a66c2;
+}
+
+.mn-github {
+    color: #24292f;
+}
+
+.mn-wordpress {
+    color: #32373c;
+}
+
+.mn-medium {
+    color: rgba(41, 41, 41, 1);
+}
+
+.mn-drupal {
+    color: #0678be;
+}
+
+.mn-stack-overflow {
+    color: #F48024;
+}
+
+.mn-hackerrank {
+    color: #1ba94c;
+}
+
+.mn-kaggle {
+    color: rgb(32, 190, 255);
+}
+
+.mn-google-play {
+    color: #555;
+}
+
+.bg-crimson {
+    background-color: #DC143C;
+}
+
+.bg-range-queries {
+    background-color: #553A41;
+}
+
+.bg-deep-learning {
+    background-color: #2C7898;
+}
+
+.experience {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.mn-image-color {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.mn-async-poster {
+    background-color: #009CA6;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .mn-info {
+        margin: 0;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    .mn-info-relative {
+        margin: 0;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    .navbar-collapse {
+        height: 35vh !important;
+    }
+
+    .h3 {
+        font-size: 1rem;
+    }
+
+    .mn-experience, .mn-contact {
+        padding: .5rem 1rem 1rem 1rem;
+    }
+
+    .mn-education, .mn-skills, .mn-volunteer, .mn-profiles {
+        padding: 1.5rem 1rem 1rem 1rem;
+    }
+
+    .mn-btn {
+        margin: .4rem;
+    }
+    .mn-banner-text {
+        font-size: 3rem;
+    }
+
+    .mn-dev-profile {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .mn-info {
+        margin: 0;
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-top: 5rem;
+        transform: none;
+    }
+}
