@@ -530,7 +530,7 @@ a {
 }
 
 .bg-crimson {
-  background-color: #DC143C;
+  background-color: #ad371f;
 }
 
 .bg-brown {
@@ -541,9 +541,22 @@ a {
   background-color: #2C7898;
 }
 
-.bg-purple {
+.bg-lopurple {
   background-color: #5c5799;
 }
+
+.bg-wpurple {
+  background-color: #6163f3;
+}
+
+.bg-fdpink {
+  background-color: #fdc6dc;
+}
+
+.bg-grey {
+  background-color: #717171;
+}
+
 
 .experience {
   width: 100%;
